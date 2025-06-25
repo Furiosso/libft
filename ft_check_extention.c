@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-char	check_extention(char *name, char *extention)
+char	ft_check_extention(char *name, char *extention)
 {
 	size_t	index[2];
 

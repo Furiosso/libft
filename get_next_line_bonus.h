@@ -20,6 +20,12 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+typedef struct s_line
+{
+	char			*line;
+	struct s_line	*next;
+}				t_buffer;
+
 typedef struct s_fd
 {
 	int			fd;

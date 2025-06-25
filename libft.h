@@ -17,7 +17,8 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include "ft_printf.h"
-# include "get_next_line.h"
+# include "ft_dprintf.h"
+# include "ft_sprintf.h"
 # include "get_next_line_bonus.h"
 
 typedef struct s_list
@@ -29,7 +30,7 @@ typedef struct s_list
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t count, size_t size);
-char	check_extention(char *name, char *extention);
+char	ft_check_extention(char *name, char *extention);
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);
