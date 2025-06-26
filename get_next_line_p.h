@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_BONUS_H
-# define GET_NEXT_LINE_BONUS_H
+#ifndef GET_NEXT_LINE_P_H
+# define GET_NEXT_LINE_P_H
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 42
 # endif
@@ -35,10 +35,10 @@ typedef struct s_fd
 	t_buffer	*list;
 }				t_index;
 
-char		*get_next_line(int fd);
-t_index		*create_list(int fd, t_index **index);
-size_t		get_len(t_buffer *list);
-void		record_first_line(t_buffer **list);
-char		*clean_bonus(t_index **index, int fd);
+char		*get_next_line_p(int fd);
+t_index		*create_list_p(int fd, t_index **index);
+size_t		get_len_p(t_buffer *list);
+void		record_first_line_p(t_buffer **list);
+char		*clean_bonus_p(t_index **index, int fd);
 
 #endif

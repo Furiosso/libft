@@ -23,7 +23,7 @@ CFILES = ft_atoi.c ft_bzero.c ft_calloc.c ft_check_extention.c\
 	ft_dprintf.c ft_dprintf_utils.c\
 	ft_sprintf.c ft_sprintf_utils.c\
 	ft_alloc.c ft_itoa_p.c ft_lstnew_bonus_p.c ft_split_p.c ft_strdup_p.c ft_strjoin_p.c\
-	ft_strmapi_p.c ft_strtim.c ft_substr_p.c
+	ft_strmapi_p.c ft_strtrim_p.c ft_substr_p.c
 
 CFLAGS = -Wall -Wextra -Werror
 
