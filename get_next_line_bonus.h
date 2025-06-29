@@ -40,5 +40,11 @@ t_index		*create_list(int fd, t_index **index);
 size_t		get_len(t_buffer *list);
 void		record_first_line(t_buffer **list);
 char		*clean_bonus(t_index **index, int fd);
+char		*get_next_line_p(int fd, int clean);
+t_index		*create_list_p(int fd, t_index **index);
+size_t		get_len_p(t_buffer *list);
+void		record_first_line_p(t_buffer **list);
+char		*clean_bonus_p(t_index **index, int fd);
+char		*clean_everything(t_index **index);
 
 #endif

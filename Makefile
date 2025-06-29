@@ -20,6 +20,7 @@ CFILES = ft_atoi.c ft_bzero.c ft_calloc.c ft_check_extention.c\
 	ft_lstadd_back_bonus.c ft_lstadd_front_bonus.c ft_lstclear_bonus.c ft_lstdelone_bonus.c\
 	ft_lstiter_bonus.c ft_lstlast_bonus.c ft_lstmap_bonus.c ft_lstnew_bonus.c ft_lstsize_bonus.c\
 	get_next_line_bonus.c get_next_line_utils_bonus.c\
+	get_next_line_bonus_p.c get_next_line_utils_bonus_p.c\
 	ft_dprintf.c ft_dprintf_utils.c\
 	ft_sprintf.c ft_sprintf_utils.c\
 	ft_alloc.c ft_itoa_p.c ft_lstnew_bonus_p.c ft_split_p.c ft_strdup_p.c ft_strjoin_p.c\

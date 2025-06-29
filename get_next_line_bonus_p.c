@@ -12,18 +12,20 @@
 
 #include "get_next_line_bonus.h"
 
-char		*get_next_line(int fd);
+char		*get_next_line_p(int fd, int clean);
 static void	fill_list(int fd, t_buffer **list);
 static void	handle_node(t_buffer **list, t_buffer *node);
 static char	lf_is_found(t_buffer **list);
 static void	charge_line(t_index **node, char *line);
 
-char	*get_next_line(int fd)
+char	*get_next_line_p(int fd, int clean)
 {
 	static t_index	*index = NULL;
 	t_index			*node;
 	char			*line;
 
+	if (clean)
+		return (clean_everything(&index));
 	if (fd < 0 || BUFFER_SIZE < 1 || BUFFER_SIZE > 0xffffffffffffffff
 		|| (read(fd, &line, 0)) < 0)
 		return (clean_bonus(&index, fd));
