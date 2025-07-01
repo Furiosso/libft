@@ -6,6 +6,7 @@
 # include <unistd.h>
 # include <stdarg.h>
 
+int	ft_dprintf(int fd, const char *string, ...);
 int	ft_dputper(int fd);
 int	ft_dputchar(int fd, char c);
 int	ft_dputstr(int fd, char *s);
