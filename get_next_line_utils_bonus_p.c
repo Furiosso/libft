@@ -117,23 +117,21 @@ char	*clean_bonus_p(t_index **index, int fd)
 
 char	*clean_everything(t_index **index)
 {
-	t_index		*aux1;
-	t_buffer	*aux2;
+	t_buffer	*aux;
 
 	if (!*index)
 		return (NULL);
 	while (*index)
 	{
-		aux1 = (*index)->next;
 		while ((*index)->list)
 		{
-			aux2 = (*index)->list->next;
+			aux = (*index)->list->next;
 			free((*index)->list->line);
 			free((*index)->list);
-			(*index)->list = aux2;
+			(*index)->list = aux;
 		}
-		free(*index);
-		*index = aux1;
+		*index = (*index)->next;
 	}
+	free(*index);
 	return (NULL);
 }
