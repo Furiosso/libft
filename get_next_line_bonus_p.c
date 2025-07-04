@@ -35,7 +35,7 @@ char	*get_next_line_p(int fd, int clean)
 	fill_list(fd, &node->list);
 	if (!node->list)
 		return (clean_bonus(&index, fd));
-	line = ft_calloc((get_len(node->list) + 1), sizeof(char));
+	line = ft_alloc((get_len(node->list) + 1) * sizeof(char), 1);
 	if (!line)
 		return (clean_bonus(&index, fd));
 	charge_line(&node, line);
